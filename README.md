@@ -1,6 +1,28 @@
 # projeto_JDBC_readme
-Parte do Enzo:
+TRABALHO FASE 1
+integrantes: Erick Piacente, Kauã de Lira, Enzo Bicalho.
 
+EXPLICAÇÃO SOBRE DAO (com exemplos)
+
+Na criação sistemas que utilizam banco de dados, é preferível que o código seja compreensível, seguro, simples e de fácil manutenção. Nesse contexto, surgem padrões e tecnologias que auxiliam na organização. Entre eles, destacam-se o padrão DAO (Data Access Object), que organiza o acesso de dados
+
+O DAO é um padrão de projeto que tem como principal objetivo separar a lógica de acesso a dados da lógica de negócio da aplicação. Ele centraliza as operações de persistência, como CRUD e consultas, em uma camada própria, isolando o restante da aplicação da forma como os dados são armazenados, em termos práticos, isso ajuda a manter o sistema mais legível e facilita a evolução da tecnologia de banco de dados usada.
+
+A utilização do padrão DAO traz benefícios, como:
+
+melhor organização do código
+facilidade de manutenção
+reutilização de código
+maior segurança
+desacoplamento entre camadas
+
+Exemplo: Nesse cenário, existe uma entidade chamada Cliente, que representa os dados armazenados no banco, como nome e e-mail. A aplicação pode possuir uma classe chamada ClienteDao, responsável por realizar operações como inserir, buscar, atualizar e excluir clientes no banco de dados. A camada de serviço chama esse DAO, e o DAO cuida do SQL e do mapeamento entre registros do banco e objetos da aplicação.
+
+ciclo de vida da conexão JDBC
+
+O JDBC (Java Database Connectivity) é uma API que permite que aplicações Java se conectem a bancos de dados relacionais, sendo o fluxo básico é registrar o driver, abrir a conexão, executar comandos SQL, processar resultados e encerrar a conexão.
+
+O processo segue uma sequência simples: abrir a conexão, preparar o SQL, executar, tratar o resultado (se houver) e fechar tudo no final. Em sistemas maiores, esse ciclo pode ser otimizado com o uso de pool de conexões, evitando abrir e fechar conexões o tempo todo.
 Parte do Erick:
 
 PRATICAS DE SEGURANÇA
